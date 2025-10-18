@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Pseudo-Class Example</title>
+  <style>
+    /* Structural pseudo-classes */
+    ul li:first-child {
+      color: red;
+    }
+
+    ul li:last-child {
+      color: green;
+    }
+
+    ul li:nth-child(2) {
+      font-weight: bold;
+    }
+
+    ul li:nth-of-type(odd) {
+      background-color: #f0f0f0;
+    }
+
+   
+    button:hover {
+      background-color: lightblue;
+      border: none;
+      padding: 10px;
+      color: palevioletred;
+      text-decoration: underline;
+    }
+
+    button:active {
+      background-color: lightgreen;
+    }
+
+   
+
+    input:checked + label {
+      color: orange;
+    }
+
+    input:disabled {
+      background-color: #ddd;
+    }
+
+    input:enabled {
+      background-color: white;
+    }
+
+    /* Form validation pseudo-classes */
+    input:required {
+      border-left: 5px solid red;
+    }
+
+    input:optional {
+      border-left: 5px solid gray;
+    }
+
+    input:valid {
+      border-color: green;
+    }
+
+    input:invalid {
+      border-color: red;
+    }
+
+    /* Negation pseudo-class */
+    li:not(.special) {
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>CSS Pseudo-Class Demo</h2>
+
+  <!-- List for structural pseudo-classes -->
+  <ul>
+    <li>First Item</li>
+    <li class="special">Second Item</li>
+    <li>Third Item</li>
+    <li>Fourth Item</li>
+  </ul>
+
+  <!-- Buttons for UI state -->
+  <button>Hover or Click Me</button>
+
+  <!-- Form for form-related pseudo-classes -->
+  <form>
+    <p><input type="text" placeholder="Focus me" required></p>
+    <p><input type="email" placeholder="Enter valid email" required></p>
+    <p><input type="text" placeholder="Optional field"></p>
+
+    <p>
+      <input type="checkbox" id="chk1">
+      <label for="chk1">Check me</label>
+    </p>
+
+    <p>
+      <input type="text" value="Disabled" disabled>
+      <input type="text" value="Enabled">
+    </p>
+
+    <p><button type="submit">Submit</button></p>
+  </form>
+
+</body>
+</html>

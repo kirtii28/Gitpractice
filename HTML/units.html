@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Units Demo</title>
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+
+   
+    .px-box {
+      width: 200px;
+      height: 100px;
+      background-color: lightblue;
+    }
+
+    .cm-box {
+      width: 5cm;
+      height: 2cm;
+      background-color: lightcoral;
+    }
+
+    .in-box {
+      width: 2in;
+      height: 1in;
+      background-color: lightgreen;
+    }
+
+    .pt-box {
+      width: 150pt;
+      height: 80pt;
+      background-color: lightgoldenrodyellow;
+    }
+
+  
+    .percent-box {
+      width: 50%;
+      height: 50px;
+      background-color: plum;
+    }
+
+    .em-box {
+      font-size: 2em;
+      width: 10em;
+      height: 3em;
+      background-color: lightsalmon;
+    }
+
+    .rem-box {
+      font-size: 1rem;
+      width: 15rem;
+      height: 4rem;
+      background-color: lightseagreen;
+    }
+
+    .vw-box {
+      width: 50vw;
+      height: 10vh;
+      background-color: lightskyblue;
+    }
+
+    .vmin-box {
+      width: 20vmin;
+      height: 20vmin;
+      background-color: thistle;
+    }
+
+    .vmax-box {
+      width: 10vmax;
+      height: 5vmax;
+      background-color: peachpuff;
+    }
+
+    .box {
+      margin: 10px 0;
+      padding: 10px;
+      color: black;
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>CSS Units Demonstration</h2>
+
+  <div class="px-box box">200px × 100px</div>
+  <div class="cm-box box">5cm × 2cm</div>
+  <div class="in-box box">2in × 1in</div>
+  <div class="pt-box box">150pt × 80pt</div>
+
+  <div class="percent-box box">50% width of parent</div>
+  <div class="em-box box">10em × 3em (relative to element font size)</div>
+  <div class="rem-box box">15rem × 4rem (relative to root font size)</div>
+
+  <div class="vw-box box">50vw width (50% of viewport)</div>
+  <div class="vmin-box box">20vmin (relative to smaller of width/height)</div>
+  <div class="vmax-box box">10vmax (relative to larger of width/height)</div>
+
+</body>
+</html>
+
